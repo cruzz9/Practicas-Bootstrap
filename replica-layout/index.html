@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Boot - Inicio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- 🔝 ENCABEZADO (Tu navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#"> Spring</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Recursos
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Documentación</a></li>
+                <li><a class="dropdown-item" href="#">Guías</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">GitHub</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO / PORTADA -->
+    <section class="hero-section text-white py-5 text-center">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-3">Spring Boot</h1>
+        <p class="lead mb-4">Crea aplicaciones Java empresariales de forma rápida, sencilla y lista para producción.</p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="#" class="btn btn-light btn-lg fw-semibold px-4">Comenzar Ahora</a>
+          <a href="#" class="btn btn-outline-light btn-lg px-4">Documentación Oficial</a>
+        </div>
+      </div>
+    </section>
+
+    <!--  CARACTERÍSTICAS -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-bold">¿Por qué elegir Spring Boot?</h2>
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body text-center">
+                <h3 class="fs-4 mb-3">⚡ Auto-configuración</h3>
+                <p class="text-muted">Spring Boot detecta tus dependencias y configura tu proyecto automáticamente. Olvídate del XML.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body text-center">
+                <h3 class="fs-4 mb-3">Servidor Embebido</h3>
+                <p class="text-muted">Ejecuta tu app como un JAR autónomo. Tomcat, Jetty o Undertow ya vienen incluidos.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <div class="card-body text-center">
+                <h3 class="fs-4 mb-3"> Production Ready</h3>
+                <p class="text-muted">Métricas, health checks, logs y gestión en tiempo real con Spring Actuator.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK START -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-4 fw-bold">Tu primera app en 3 líneas</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <pre class="code-block p-4 mb-3"><code>import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MiApp {
+    public static void main(String[] args) {
+        SpringApplication.run(MiApp.class, args);
+    }
+}</code></pre>
+            <p class="text-center text-muted">Solo una clase con <code class="bg-light px-2 py-1 rounded">@SpringBootApplication</code> y listo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  FOOTER -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+      <div class="container text-center">
+        <p class="mb-2">&copy; 2026 Spring Boot Demo. Creado con Bootstrap 5.</p>
+        <div>
+          <a href="#" class="text-success text-decoration-none me-3">Documentación</a>
+          <a href="#" class="text-success text-decoration-none">Stack Overflow</a>
+          <a href="#" class="text-success text-decoration-none">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

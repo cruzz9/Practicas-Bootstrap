@@ -1,0 +1,9 @@
+.hero-section {
+        background: linear-gradient(135deg, #198754 0%, #0b4f32 100%);
+      }
+      .code-block {
+        background-color: #212529;
+        color: #a8e6cf;
+        font-family: 'Courier New', monospace;
+        border-radius: 0.5rem;
+      }
